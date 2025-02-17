@@ -10,6 +10,21 @@ import {
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 import { ThemeProvider } from "./providers";
+import CustomErrorBoundary from "../src/ErrorBoundary";
+import HydrationDebugger from "../src/HydrationDebugger";
+
+// Prevent FOUC
+const noFoucScript = `
+  (function() {
+    // Prevent flash of unstyled content
+    let theme = localStorage.getItem('theme') || 'light';
+    document.documentElement.classList.add(theme);
+    document.documentElement.style.visibility = 'hidden';
+    window.addEventListener('DOMContentLoaded', function() {
+      document.documentElement.style.visibility = '';
+    });
+  })();
+`;
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,15 +40,6 @@ export const links: Route.LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-// Prevent theme flash script
-const themeScript = `
-  let theme = localStorage.getItem("theme") || "system";
-  if (theme === "system") {
-    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
-  document.documentElement.classList.toggle("dark", theme === "dark");
-`;
-
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -42,7 +48,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
@@ -54,7 +59,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <CustomErrorBoundary>
+      <HydrationDebugger />
+      <Outlet />
+    </CustomErrorBoundary>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
