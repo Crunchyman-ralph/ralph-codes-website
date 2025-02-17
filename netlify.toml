@@ -1,6 +1,16 @@
 [build]
-command = "react-router build"
+command = "npm run build"
 publish = "build/client"
+functions = "netlify/functions"
 
 [dev]
-command = "react-router dev"
+command = "npm run dev"
+targetPort = 3000
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[functions]
+node_bundler = "esbuild"
