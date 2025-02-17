@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Github } from "lucide-react";
+import { FiGithub } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -36,7 +36,7 @@ export default function AboutPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Github className="w-4 h-4 mr-2" />
+                  <FiGithub className="w-4 h-4 mr-2" />
                   GitHub
                 </a>
               </Button>
