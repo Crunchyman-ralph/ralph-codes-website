@@ -10,21 +10,6 @@ import {
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
 import { ThemeProvider } from "./providers";
-import CustomErrorBoundary from "../src/ErrorBoundary";
-import HydrationDebugger from "../src/HydrationDebugger";
-
-// Prevent FOUC
-const noFoucScript = `
-  (function() {
-    // Prevent flash of unstyled content
-    let theme = localStorage.getItem('theme') || 'light';
-    document.documentElement.classList.add(theme);
-    document.documentElement.style.visibility = 'hidden';
-    window.addEventListener('DOMContentLoaded', function() {
-      document.documentElement.style.visibility = '';
-    });
-  })();
-`;
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -50,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -60,10 +45,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <CustomErrorBoundary>
-      <HydrationDebugger />
+    <ThemeProvider>
       <Outlet />
-    </CustomErrorBoundary>
+    </ThemeProvider>
   );
 }
 
