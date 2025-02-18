@@ -23,7 +23,7 @@ export default function AboutPage() {
           </Avatar>
           <div className="flex-1 space-y-2">
             <div className="flex items-center justify-between">
-              <h1 className="text-4xl font-bold">Ralph Khreish</h1>
+              <h1 className="text-4xl font-bold">Ralph Krysler</h1>
               <ThemeToggle />
             </div>
             <p className="text-xl text-muted-foreground">
