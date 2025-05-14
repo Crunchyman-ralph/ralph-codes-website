@@ -2,11 +2,13 @@
   "mode": "exit",
   "tag": "rc",
   "initialVersions": {
-    "ralph-codes-website": "0.0.1"
+    "ralph-codes-website": "0.0.2-rc.1"
   },
   "changesets": [
     "bright-maps-grin",
+    "evil-sides-taste",
     "smooth-lands-follow",
-    "whole-actors-appear"
+    "whole-actors-appear",
+    "wide-garlics-start"
   ]
 }
