@@ -1,7 +1,8 @@
 {
   "name": "netlify-react-router-template",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "author": "crunchyman",
   "type": "module",
   "scripts": {
     "build": "react-router build",
