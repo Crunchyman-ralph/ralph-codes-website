@@ -1,5 +1,5 @@
 ---
-"netlify-react-router-template": patch
+"ralph-codes-website": patch
 ---
 
 some more testing prerelease
