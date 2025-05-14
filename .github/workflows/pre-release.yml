@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # Allows manual triggering from GitHub UI/API
   push:
     branches:
-      - 'next'
+      - "next"
 
 concurrency: pre-release-${{ github.ref }}
 
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
 
       - name: Cache node_modules
         uses: actions/cache@v4
@@ -47,6 +47,8 @@ jobs:
           npx changeset version
           git add .
           git commit -m "chore: rc version bump" || echo "No changes to commit"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release Candidate Pull Request or Publish Release Candidate to npm
         uses: changesets/action@v1
