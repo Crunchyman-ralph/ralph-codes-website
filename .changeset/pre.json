@@ -1,0 +1,13 @@
+{
+  "mode": "exit",
+  "tag": "rc",
+  "initialVersions": {
+    "ralph-codes-website": "0.0.3-rc.3"
+  },
+  "changesets": [
+    "bright-camels-scream",
+    "easy-parts-repair",
+    "full-poems-pay",
+    "great-onions-unite"
+  ]
+}
