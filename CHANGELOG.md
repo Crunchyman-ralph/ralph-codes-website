@@ -1,5 +1,13 @@
 # ralph-codes-website
 
+## 0.0.4
+
+### Patch Changes
+
+- [#5](https://github.com/Crunchyman-ralph/ralph-codes-website/pull/5) [`a33a04c`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/a33a04c02b90360eab029174f2ac7b42b64a1bf6) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - biggest patch in the world
+
+- [#5](https://github.com/Crunchyman-ralph/ralph-codes-website/pull/5) [`04c877f`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/04c877fd2e860a55b065d462f7c18b71db523dac) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - clean patch
+
 ## 0.0.4-rc.0
 
 ### Patch Changes
