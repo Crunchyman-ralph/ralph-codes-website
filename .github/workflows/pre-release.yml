@@ -2,9 +2,6 @@ name: Pre-Release (RC)
 
 on:
   workflow_dispatch: # Allows manual triggering from GitHub UI/API
-  push:
-    branches:
-      - "next"
 
 concurrency: pre-release-${{ github.ref }}
 
