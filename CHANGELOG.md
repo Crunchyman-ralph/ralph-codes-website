@@ -1,5 +1,21 @@
 # ralph-codes-website
 
+## 0.0.3-rc.3
+
+### Patch Changes
+
+- [`32aca63`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/32aca63f0336f52681fb86ff0d91e5211c2766cc) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - patch 4
+
+## 0.0.3-rc.2
+
+### Patch Changes
+
+- [`dbc97af`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/dbc97afe59ecdd0c9e7d050a81afcb2df3cfca48) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - patch 2
+
+- [`840f6d3`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/840f6d3135972ecc8fe07519a444afc71820f83c) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - patch 3
+
+- [`d1c082b`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/d1c082bc120aba4c42bb38a999b532231bd02181) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - patch 1
+
 ## 0.0.2
 
 ### Patch Changes
