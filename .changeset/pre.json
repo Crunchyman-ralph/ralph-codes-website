@@ -1,0 +1,11 @@
+{
+  "mode": "exit",
+  "tag": "rc",
+  "initialVersions": {
+    "ralph-codes-website": "0.0.3"
+  },
+  "changesets": [
+    "heavy-trains-visit",
+    "stupid-shrimps-give"
+  ]
+}
