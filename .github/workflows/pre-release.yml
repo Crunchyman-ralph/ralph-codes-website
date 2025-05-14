@@ -59,9 +59,9 @@ jobs:
 
       - name: Exit RC mode
         run: |
+          npx changeset pre exit
           git add .
           git commit -m "chore: rc version bump" || echo "No changes to commit"
-          npx changeset pre exit
 
       - name: Commit & Push changes
         uses: actions-js/push@master
