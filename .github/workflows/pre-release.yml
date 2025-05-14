@@ -55,15 +55,11 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Exit RC mode
-        run: |
-          npx changeset pre exit
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions@example.com"
-          git add .
-          git commit -m "chore: rc version bump" || echo "No changes to commit"
+        run: npx changeset pre exit
 
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+          message: "chore: rc version bump"
