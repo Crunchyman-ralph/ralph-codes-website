@@ -41,10 +41,7 @@ jobs:
           npx changeset pre enter rc
 
       - name: Version RC packages
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions@example.com"
-          npx changeset version
+        run: npx changeset version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -60,6 +57,8 @@ jobs:
       - name: Exit RC mode
         run: |
           npx changeset pre exit
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@example.com"
           git add .
           git commit -m "chore: rc version bump" || echo "No changes to commit"
 
