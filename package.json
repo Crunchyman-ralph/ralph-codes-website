@@ -1,8 +1,8 @@
 {
-  "name": "netlify-react-router-template",
+  "name": "ralph-codes-website",
   "version": "0.0.1",
   "private": false,
-  "author": "crunchyman",
+  "author": "crunchyman-ralph",
   "type": "module",
   "scripts": {
     "build": "react-router build",
