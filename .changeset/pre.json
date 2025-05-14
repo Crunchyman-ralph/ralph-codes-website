@@ -1,0 +1,12 @@
+{
+  "mode": "pre",
+  "tag": "rc",
+  "initialVersions": {
+    "ralph-codes-website": "0.0.1"
+  },
+  "changesets": [
+    "bright-maps-grin",
+    "smooth-lands-follow",
+    "whole-actors-appear"
+  ]
+}
