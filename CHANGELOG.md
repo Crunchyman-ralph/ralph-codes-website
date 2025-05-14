@@ -1,5 +1,11 @@
 # ralph-codes-website
 
+## 0.0.3-rc.4
+
+### Patch Changes
+
+- [`6b5576e`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/6b5576eff929526b450ffb519daab879f1676326) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - biggest patch in the world
+
 ## 0.0.3-rc.3
 
 ### Patch Changes
