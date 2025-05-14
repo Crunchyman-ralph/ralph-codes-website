@@ -1,5 +1,11 @@
 # ralph-codes-website
 
+## 0.0.3-rc.3
+
+### Patch Changes
+
+- [`32aca63`](https://github.com/Crunchyman-ralph/ralph-codes-website/commit/32aca63f0336f52681fb86ff0d91e5211c2766cc) Thanks [@Crunchyman-ralph](https://github.com/Crunchyman-ralph)! - patch 4
+
 ## 0.0.3-rc.2
 
 ### Patch Changes
