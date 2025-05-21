@@ -36,6 +36,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
+        <footer className="w-full py-4 text-center text-sm text-muted-foreground border-t border-border mt-8">
+          © {new Date().getFullYear()} ADIKIA LLC. All rights reserved.
+        </footer>
         <ScrollRestoration />
         <Scripts />
       </body>
